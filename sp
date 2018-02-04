@@ -7,10 +7,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); 
 // Create service provider 
 var sp_options = {
-  entity_id: "http://www.xcryptolab.com:8443",
+  entity_id: "https://www.xcryptolab.com:8443",
   private_key: fs.readFileSync("key-file.pem").toString(),
   certificate: fs.readFileSync("cert-file.crt").toString(),
-  assert_endpoint: "http://spdev.xcryptolab.com:3000/assert",
+  assert_endpoint: "https://www.xcryptolab.com:8443/assert",
   allow_unencrypted_assertion: true,
   nameid_format: "urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"
 };
