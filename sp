@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); 
 // Create service provider 
 var sp_options = {
-  entity_id: "http://spdev.xcryptolab.com:3000",
+  entity_id: "http://www.xcryptolab.com:8443",
   private_key: fs.readFileSync("key-file.pem").toString(),
   certificate: fs.readFileSync("cert-file.crt").toString(),
   assert_endpoint: "http://spdev.xcryptolab.com:3000/assert",
